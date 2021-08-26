@@ -1,0 +1,30 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "Base typescript template",
+  "main": "index.js",
+  "scripts": {
+    "start:clean": "rm -rf dist && clear && npm run build && node dist/index.js",
+    "start": "node dist/index.js",
+    "build": "tsc --build tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Rodríguez",
+  "license": "ISC",
+  "dependencies": {
+    "@types/lodash.capitalize": "^4.2.6",
+    "@types/node": "^16.6.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "chalk": "^4.1.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "lodash.capitalize": "^4.2.1",
+    "scrape-it": "^5.3.1",
+    "source-map-support": "^0.5.19",
+    "typescript": "^4.3.5"
+  }
+}
